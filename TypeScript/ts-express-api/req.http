@@ -1,0 +1,55 @@
+GET http://localhost/user-api/test
+
+###
+
+POST http://localhost/user-api/user
+Content-Type: application/json
+
+{
+    "user_name":"laxman",
+    "email":"lakshmana5296@gmail.com",
+    "password":"lakshmana1234"
+}
+###
+
+POST http://localhost/user-api/user
+Content-Type: application/json
+
+{
+    "user_name":"lokesh",
+    "email":"lakshman@gmail.com",
+    "password":"lakshmana1234"
+}
+
+###
+POST http://localhost/user-api/login
+Content-Type: application/json
+
+{
+    "email":"lakshman@gmail.com",
+    "password":"lakshmana1234"
+}
+
+###
+PUT http://localhost/user-api/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxha3NobWFuQGdtYWlsLmNvbSIsImlhdCI6MTY3ODE4MTY5NywiZXhwIjoxNjc4MTgxODc3fQ.568r3ESvLJF2KDXhbzhyk6KxGeZziw7aC_U8FIT2VvE
+
+{
+    "user_name":"laxmana rao",
+    "email":"lakshmana5296@gmail.com",
+    "password":"lakshmana1234"
+}
+
+###
+GET http://localhost/user-api/users
+
+
+###
+DELETE http://localhost/user-api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxha3NobWFuYTUyOTZAZ21haWwuY29tIiwiaWF0IjoxNjc4MTc5NzI4LCJleHAiOjE2NzgxNzk5MDh9.Ybvpe4dSWxgEL-YUlhiUOzoNKm9ZS5GkxC3w1tWoHHQ
+
+
+###
+GET http://localhost/user-api/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxha3NobWFuQGdtYWlsLmNvbSIsImlhdCI6MTY3ODE4MDM3NiwiZXhwIjoxNjc4MTgwNTU2fQ.hCIy3TE9AR5vUF5_rjk6ddjmnX4so0IxMNJk5r1MXBw

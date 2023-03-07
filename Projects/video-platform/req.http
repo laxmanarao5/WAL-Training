@@ -1,0 +1,43 @@
+GET http://localhost/channel-api/test
+
+###
+POST http://localhost/channel-api/channel
+Content-Type: application/json
+
+{
+    "owner_name":"lokesh",
+    "channel":{
+        "channel_name":"lokesh",
+        "videos":[
+            {
+                "video_title":"Oneplus 11 unboxing"
+            },
+            {
+                "video_title":"Oneplus 11T unboxing"
+            }
+        ]
+    }
+}
+
+###
+GET http://localhost/channel-api/channels
+
+###
+
+GET http://localhost/channel-api/owner/2
+
+###
+
+GET http://localhost/channel-api/channel/2
+
+###
+
+
+GET http://localhost/channel-api/video/2
+
+
+
+###
+POST http://localhost/channel-api/channel
+Content-Type: application/json
+

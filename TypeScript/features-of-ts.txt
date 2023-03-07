@@ -1,0 +1,10 @@
+cross platform
+ OOP scripting language
+
+Static type checking
+
+boolean
+number
+scripting
+
+ DOM manipulations

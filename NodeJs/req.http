@@ -1,0 +1,154 @@
+GET http://localhost/user/users
+
+###   
+GET http://localhost/user/user/511
+
+###   
+GET http://localhost/user/user/email/lakshmana5296@gmail.com/username/laxman
+###
+
+POST http://localhost/user/register-user
+Content-Type: application/json
+
+{
+    "username":"shameer",
+    "password":"Shameer@123",
+    "email":"Shameer@gmail.com"
+}
+###
+
+POST http://localhost/user/register-user
+Content-Type: application/json
+
+{
+    "username":"laxman",
+    "password":"Laxmana@123",
+    "email":"lakshmana5296@gmail.com"
+}
+
+
+
+
+###
+#Login user
+POST http://localhost/user/login-user
+Content-Type: application/json
+
+{
+    "email":"lakshmana5296@gmail.com",
+    "password":"Laxmana@123"
+}
+###   
+GET http://localhost/user/protected
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxha3NobWFuYTUyOTZAZ21haWwuY29tIiwiaWF0IjoxNjc2NTM4NDk1LCJleHAiOjE2NzY1Mzg1NTV9.Rl6sHZmNoDt1H04zi4okTAIp1S5rHD1BSJkP0RLiVqY
+###
+
+PUT http://localhost/user/modify-user
+Content-Type: application/json
+
+{
+    "emp_id":"512",
+    "emp_name":"Boddepalli laxmana rao",
+    "emp_city":"Hyd",
+    "emp_designation":"Associate software developer",
+    "emp_age":20
+}
+
+
+###
+
+DELETE http://localhost/user/delete/lakshmana5296@gmail.com
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Imxha3NobWFuYTUyOTZAZ21haWwuY29tIiwiaWF0IjoxNjc2NTM5NTk0LCJleHAiOjE2NzY1Mzk3NzR9.Zz11WwCVnL5lqUhMyRH3urIQlLpGr_hfUwZKhCELLPQ
+###
+
+
+
+
+
+
+
+# Working on Products
+
+
+###
+
+#get all products
+GET http://localhost/products/products
+
+
+###
+#get products by product id
+GET http://localhost/products/product/3
+
+
+###
+
+# Add products
+POST http://localhost/products/addProduct
+Content-Type: application/json
+
+{
+        "productId":3,
+        "productName":"Iphone 14",
+        "brand":"Apple",
+        "productPrice":125000,
+        "dateOfMan":"2022-11-01"
+}
+
+###
+# Add products
+POST http://localhost/products/addProduct
+Content-Type: application/json
+
+{
+        "productId":4,
+        "productName":"Samsung galaxy s23",
+        "brand":"samsung",
+        "productPrice":125000,
+        "dateOfMan":"2023-02-01"
+}
+
+###
+
+#modify product
+PUT http://localhost/products/modify-product
+Content-Type: application/json
+
+{
+    "productId":4,
+    "productName":"Galaxy s23 ultra",
+    "brand":"Samsung",
+    "productPrice":125000,
+    "dateOfMan":"2023-02-01"
+}
+
+###
+
+#Delete product by id
+DELETE http://localhost/products/delete/4
+
+
+
+###
+
+
+
+
+
+
+#working with Projects
+
+
+
+# Get employees allocatd to an project
+GET http://localhost/projects/project-assignment-api/222
+
+
+###
+# Get projects allocatd to an employee
+GET http://localhost/projects/employee-assignment-api/3
+
+###
+
+# Employess on bench
+GET http://localhost/projects/bench

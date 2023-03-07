@@ -1,0 +1,49 @@
+POST http://localhost/create-customer
+Content-Type: application/json
+
+{
+    "customer_id":800,
+    "customer_name":"lax",
+    "age":40,
+    "email":"lakshman@gmail.com",
+    "password":"laxman1234"
+}
+
+
+####
+
+GET http://localhost/get-customers
+
+####
+
+GET http://localhost/get-customersexcept
+
+
+###
+
+GET http://localhost/customer/600
+
+###
+
+GET http://localhost/customer/name/Laxmana rao
+
+###
+
+GET http://localhost/customer/age/20
+
+
+###
+
+PUT http://localhost/update
+Content-Type: application/json
+
+{
+    "customer_id":"700",
+    "customer_name":" B Laxmana rao",
+    "age":20
+}
+
+
+###
+
+DELETE http://localhost/delete/700
